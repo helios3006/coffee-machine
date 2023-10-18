@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles.css">
         <title>Document</title>
     </head>
     <body>
@@ -16,7 +17,7 @@
             </ul>
         </nav>
     <h2>Order a Coffeee</h2>
-    <form>
+    <form id="orderForm">
         <div>
             <label for="fullName">Full name</label>
             <input type="text" id="fullName" name="fullname" placeholder="Your name">
@@ -26,6 +27,15 @@
             <label for="email">Email address</label>
             <input type="email" name="email" placeholder="Your email address">
             <span></span>
+        </div>
+        <div>
+            <label for="description">Describe your order</label>
+            <textarea id="description" name="description"></textarea>
+            <span></span>
+        </div>
+
+        <div>
+            <button id="submitBtn">Submit Order</button>
         </div>
     </form>
     <footer>
